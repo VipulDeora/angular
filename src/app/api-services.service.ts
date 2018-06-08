@@ -14,7 +14,7 @@ export class ApiServices {
         'Authorization': t
       })
     };
-    return this.http.post<any>('http://sfa.demoplatform.simplifii.com/api/v1/cards', req, options)
+    return this.http.post<any>('Your API', req, options)
       .map((value: any) => {
         return value;
       });

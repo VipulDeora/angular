@@ -29,15 +29,7 @@ export class FormComponent implements OnInit {
   selectedFile: File[] = [];
   mes: string[] = [];
   startLoading: boolean[] = [false, false, false];
-  submitRequest: any = {
-    'entity': 'Advance',
-    'action': 'Create',
-    'amount': 'abc',
-    'purpose': '',
-    'needed_by': '',
-    'adjusted_date': '',
-    'expenses': []
-  };
+  submitRequest: any = {};
   constructor(private service: ApiServices,
               private route: ActivatedRoute,
               private router: Router,
@@ -76,10 +68,6 @@ export class FormComponent implements OnInit {
     this.flag[i] = false;
   }
   onSubmit() {
-    this.submitRequest.amount = this.formInfo.value.amount;
-    this.submitRequest.purpose = this.formInfo.value.purpose;
-    this.submitRequest.needed_by = this.formInfo.get('reqDate').value;
-    this.submitRequest.adjusted_date = this.formInfo.get('adjDate').value;
     this.service.submitRequest(this.token, this.submitRequest)
       .subscribe(
         (data) => {
