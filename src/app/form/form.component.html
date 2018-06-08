@@ -1,0 +1,65 @@
+<div class="page-wrapper">
+  <div class="container">
+    <form [formGroup]="formInfo" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Image #1</label>
+        <div class="custom-file">
+          <input formControlName="img1"
+                 type="file"
+                 class="form-control"
+                 id="customFile1"
+                 (change)="onSelectFile($event, 0)">
+          <label class="custom-file-icon"
+                 for="customFile1">
+            <img src="../../assets/img/photo-camera.png" *ngIf="flag[0] && !startLoading[0]">
+            <img src="../../assets/img/success.png" *ngIf="!flag[0] && !startLoading[0]">
+            <i class="fa fa-spinner fa-spin" style="font-size:24px" *ngIf="!flag[0] && startLoading[0]"></i>
+            <span *ngIf="!flag[0] && startLoading[0]">{{ status }}%</span>
+          </label>
+        </div>
+        <span *ngIf="false">Enter a valid amount</span>
+      </div>
+      <div class="form-group">
+        <label>Bill Image #2</label>
+        <div class="custom-file">
+          <input formControlName="img2"
+                 type="file"
+                 class="form-control"
+                 id="customFile2"
+                 (change)="onSelectFile($event, 1)">
+          <label class="custom-file-icon"
+                 for="customFile2">
+            <img src="../../assets/img/photo-camera.png" *ngIf="flag[1] && !startLoading[1]">
+            <img src="../../assets/img/success.png" *ngIf="!flag[1] && !startLoading[1]">
+            <i class="fa fa-spinner fa-spin" style="font-size:24px" *ngIf="!flag[1] && startLoading[1]"></i>
+            <span *ngIf="!flag[1] && startLoading[1]">{{ status }}%</span>
+          </label>
+        </div>
+        <span *ngIf="false">Enter a valid amount</span>
+      </div>
+      <div class="form-group">
+        <label>Bill Image #3</label>
+        <div class="custom-file">
+          <input formControlName="img3"
+                 type="file"
+                 class="form-control"
+                 id="customFile3"
+                 (change)="onSelectFile($event, 2)">
+          <label class="custom-file-icon"
+                 for="customFile3">
+            <img src="../../assets/img/photo-camera.png" *ngIf="flag[2] && !startLoading[2]">
+            <img src="../../assets/img/success.png" *ngIf="!flag[2] && !startLoading[2]">
+            <i class="fa fa-spinner fa-spin" style="font-size:24px" *ngIf="!flag[2] && startLoading[2]"></i>
+            <span *ngIf="!flag[2] && startLoading[2]">{{ status }}%</span>
+          </label>
+        </div>
+        <span *ngIf="false">Enter a valid amount</span>
+      </div>
+      <div class="form-group text-center" style="padding-top: 50px">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-danger">Skip</button>
+      </div>
+    </form>
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+  </div>
+</div>

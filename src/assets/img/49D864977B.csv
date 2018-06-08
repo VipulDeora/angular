@@ -1,0 +1,3 @@
+"name","spoc","mobile","region","type_icon","customer_sap_id","bulk_job_status"
+"VERMA BEEJ BHANDAR","11101161","8765341114","UP","https://s3.ap-south-1.amazonaws.com/lavadashboard/negative.png","0001011555","FAILURE: The credit_or_debit value shall be either H or S"
+"CHUNNI LAL RAJEEV KUMAR","11100268","9412542372","UP","https://s3.ap-south-1.amazonaws.com/lavadashboard/negative.png","0001011556","FAILURE: The credit_or_debit value shall be either H or S"

@@ -1,0 +1,156 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-wrapper {
+  padding: 15px 0;
+}
+.form-group label {
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-group .form-control {
+  padding-left: 0;
+  padding-right: 0;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ccc;
+  background: transparent;
+  font-size: 12px;
+  color: #333;
+  border-radius: 0;
+}
+.select-wrapper select.form-control {
+  -webkit-appearance: none;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.date-wrapper,
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper:after {
+  position: absolute;
+  content: "";
+  background: url(../../assets/img/down-arrow.png) no-repeat;
+  right: 0px;
+  z-index: -99;
+  width: 20px;
+  height: 20px;
+  background-size: 16px;
+  top: 10px;
+  opacity: 0.6;
+}
+.date-wrapper:after {
+  position: absolute;
+  content: "";
+  background: url(../../assets/img/calendar.png) no-repeat;
+  right: 0;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  background-size: 16px;
+  top: 10px;
+  opacity: 0.6;
+}
+
+/*Panel Design*/
+
+.card {
+  border-radius: 0px;
+}
+.card-header {
+  margin: 0;
+  line-height: 35px;
+  padding: 0 15px;
+  font-weight: 500;
+  color: #333;
+}
+.card-header .panel-action {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  background: #21557e;
+  line-height: 24px;
+  padding: 0 7px;
+  margin: 5px 0;
+  border-radius: 3px;
+  border: 0;
+}
+.card-header .panel-action:hover,
+.card-header .panel-action:focus {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+}
+.card table {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.card table thead tr th {
+  font-weight: 400;
+}
+.card table .form-control {
+  padding: 0;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ccc;
+  background: transparent;
+  color: #333;
+  border-radius: 0;
+  font-size: 14px;
+  height: 30px !important;
+}
+.card table select.form-control {
+
+}
+.card table .select-wrapper:after {
+  z-index: 999;
+  width: 14px;
+  height: 14px;
+  background-size: 14px;
+  top: 8px;
+  opacity: 0.6;
+}
+.custom-file {height: 30px;}
+.custom-file-input {
+  height: 30px;
+  margin: 0;
+  opacity: 0;
+}
+.custom-file-icon {
+  position: absolute;
+  top: 3px;
+  width: 96px;
+  height: 24px;
+  left: 85%;
+  margin-left: 17px;
+  margin-bottom: 0;
+}
+.custom-file-icon img {
+  width: 25%;
+  opacity: 0.45;
+}
+input.amount {
+  text-align: right;
+}
+.card .table-sm th, .card .table-sm td {
+  padding: 0.6rem 0.3rem;
+}
+.total-row td {
+  font-weight: 500;
+}
